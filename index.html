@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link
+      rel="icon"
+      href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fnoboss.in%2Fcdn%2Fshop%2Fproducts%2F201601010099_800x.jpg%3Fv%3D1606111915&tbnid=mrBH3qrgDz55sM&vet=12ahUKEwjZzN3n_s2FAxWev2MGHbnhBLsQMygBegQIARBs..i&imgrefurl=https%3A%2F%2Fnoboss.in%2Fproducts%2Fcasio-calculator-with-extra-large-display-multiple-keys-for-smart-operation&docid=Ory7wXxtB0n7WM&w=800&h=800&q=calculator&ved=2ahUKEwjZzN3n_s2FAxWev2MGHbnhBLsQMygBegQIARBs"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="calculator">
+      <input id="display" readonly />
+      <div id="keys">
+        <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="clearDisplay()" class="operator-btn">C</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
